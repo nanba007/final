@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rakesh's personal portfolio website">
+
+    <title>Rakesh | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <a href="#home" class="logo">Rakesh<span>.</span></a>
+
+        <nav class="navbar" id="navbar">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#work" class="nav-link">How I Work</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+            <button id="themeToggle" class="theme-toggle"
+                    type="button" aria-label="Switch to dark mode">
+                🌙
+            </button>
+
+            <button id="menuToggle" class="menu-toggle"
+                    type="button" aria-label="Open navigation menu"
+                    aria-expanded="false" aria-controls="navbar">
+                ☰
+            </button>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Home Section -->
+        <section id="home" class="hero section">
+            <div class="hero-content">
+
+                <div class="hero-text">
+                    <p class="welcome">HELLO, I'M</p>
+
+                    <h1>Rakesh<span>.</span></h1>
+
+                    <h2>B.Sc. Information Technology Student</h2>
+
+                    <p class="hero-description">
+                        I am an aspiring developer learning programming
+                        and web development. I enjoy building projects,
+                        learning new skills, and improving my coding
+                        knowledge every day.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn">
+                            View My Project
+                        </a>
+
+                        <a href="#contact" class="btn btn-outline">
+                            Contact Me
+                        </a>
+                    </div>
+
+                    <div class="quick-skills">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>C Programming</span>
+                        <span>Python</span>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <img src="profile.jpg"
+                         alt="Rakesh's profile photograph">
+                </div>
+
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="section-heading">
+                <p class="section-label">GET TO KNOW ME</p>
+                <h2>About Me</h2>
+            </div>
+
+            <div class="about-card">
+                <p>
+                    Hello! I am Rakesh, a second-year B.Sc. Information
+                    Technology student at KG College of Arts and Science.
+                    I am interested in programming, web development,
+                    and software development.
+                </p>
+
+                <p>
+                    I improve my technical knowledge by practising
+                    coding and creating useful projects. I believe
+                    in learning step by step and improving through practice.
+                </p>
+
+                <div class="about-details">
+                    <div>
+                        <strong>Name</strong>
+                        <span>Rakesh</span>
+                    </div>
+
+                    <div>
+                        <strong>Degree</strong>
+                        <span>B.Sc. Information Technology</span>
+                    </div>
+
+                    <div>
+                        <strong>College</strong>
+                        <span>KG College of Arts and Science</span>
+                    </div>
+
+                    <div>
+                        <strong>Interest</strong>
+                        <span>Programming and Web Development</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section section-alt">
+            <div class="section-heading">
+                <p class="section-label">WHAT I KNOW</p>
+                <h2>My Skills</h2>
+                <p>Technologies I am learning and practising.</p>
+            </div>
+
+            <div class="skills-container">
+
+                <div class="skill-card">
+                    <div class="skill-title">
+                        <span>HTML</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 60%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-title">
+                        <span>CSS</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 60%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-title">
+                        <span>JavaScript</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 60%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-title">
+                        <span>C Programming</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 60%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-title">
+                        <span>Python</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 60%"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Projects Section: Only One Project -->
+        <section id="projects" class="section">
+            <div class="section-heading">
+                <p class="section-label">MY WORK</p>
+                <h2>My Project</h2>
+                <p>Click the project card to visit my GitHub repository.</p>
+            </div>
+
+            <div class="projects-container">
+
+                <!-- Entire Library card is clickable -->
+                <a
+                    href="https://github.com/nanba007/java-pro"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-card"
+                    aria-label="Open Library project on GitHub">
+
+                    <div class="project-icon">01</div>
+
+                    <h3>Library</h3>
+
+                    <p>
+                        Explore my Library project and view its source
+                        code in my GitHub repository.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Library</span>
+                        <span>GitHub</span>
+                        <span>Programming</span>
+                    </div>
+
+                    <span class="project-btn">
+                        View Library ↗
+                    </span>
+
+                </a>
+
+            </div>
+        </section>
+
+        <!-- How I Work Section -->
+        <section id="work" class="section section-alt">
+            <div class="section-heading">
+                <p class="section-label">MY APPROACH</p>
+                <h2>How I Work</h2>
+            </div>
+
+            <div class="work-card">
+
+                <div class="work-step">
+                    <span class="step-number">01</span>
+                    <div>
+                        <h3>Learn</h3>
+                        <p>
+                            I learn new concepts and understand the basics
+                            before writing code.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="work-step">
+                    <span class="step-number">02</span>
+                    <div>
+                        <h3>Practise</h3>
+                        <p>
+                            I practise coding and break problems into
+                            smaller, manageable steps.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="work-step">
+                    <span class="step-number">03</span>
+                    <div>
+                        <h3>Improve</h3>
+                        <p>
+                            I test my work, correct mistakes, and improve
+                            my coding skills through practice.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="goal-card">
+                <h3>My Current Goal</h3>
+                <p>
+                    Build a strong foundation in programming, frontend
+                    development, and software project development.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="section-heading">
+                <p class="section-label">GET IN TOUCH</p>
+                <h2>Contact Me</h2>
+                <p>Feel free to connect with me.</p>
+            </div>
+
+            <div class="contact-container">
+
+                <a href="mailto:25bit164@kgcas.com" class="contact-card">
+                    <span class="contact-icon">✉</span>
+
+                    <div>
+                        <h3>Email</h3>
+                        <p>25bit164@kgcas.com</p>
+                    </div>
+                </a>
+
+                <a href="https://github.com/nanba007"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="contact-card">
+                    <span class="contact-icon">⌘</span>
+
+                    <div>
+                        <h3>GitHub</h3>
+                        <p>github.com/nanba007</p>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>
+            Designed and built by <strong>Rakesh</strong> |
+            &copy; <span id="currentYear"></span> All rights reserved.
+        </p>
+
+        <a href="#home" class="back-to-top">Back to top ↑</a>
+    </footer>
+
+</body>
+</html>
